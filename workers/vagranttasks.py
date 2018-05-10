@@ -8,7 +8,7 @@ import sys
 import time
 
 from celery import Celery
-from config import BaseConfig
+from workers.config import BaseConfig
 
 config = BaseConfig()
 sim_vagrant = Celery('tasks', backend=config.redisbackend, broker=config.redisbroker)

@@ -6,7 +6,11 @@ This project uses Redis/Celery, python, and vagrant with virtualbox to do advers
 
 The project parses yaml files with actions and uses celery to queue these actions up and run them one at a time without interaction.
 
+---
 
+Python3 and Red Canary Atomic Testing version
+
+work in progress
 
 ---
 

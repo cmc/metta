@@ -1,12 +1,13 @@
-import ConfigParser
+import configparser
 import sys
 import os
+
 class BaseConfig(object):
     """
         Generic Config Object.
     """
     def __init__(self):
-        config = ConfigParser.RawConfigParser()
+        config = configparser.RawConfigParser()
         path=os.path.dirname( os.path.realpath(__file__))
         config_path = path + '/../config.ini'
         config.read(config_path)
